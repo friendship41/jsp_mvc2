@@ -43,7 +43,7 @@
 
                     <div id="modify_btn">
                         <label><input type="button" value="정보수정" class="btn" onclick="location.href='/mvc2/main.do?cmd=memberMod'"></label>
-                        <label><input type="button" value="회원탈퇴" class="btn" onclick="location.href=''"></label>
+                        <label><input type="button" value="회원탈퇴" class="btn" onclick="location.href='/mvc2/main.do?cmd=memberDel'"></label>
                         <label><input type="button" value="로그아웃" class="btn" onclick="location.href='/mvc2/main.do?cmd=logout'"></label></div>
                     </fieldset>
                 </form>

@@ -49,6 +49,12 @@ public class ActionFactory
             case "memberModProc":
                 action = new MemberModProcAction();
                 break;
+            case "memberDel":
+                action = new MemberDeleteAction();
+                break;
+            case "memberDelProc":
+                action = new MemberDeleteProcAction();
+                break;
             default:
                 action = new IndexAction();
                 break;
