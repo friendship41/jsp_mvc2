@@ -47,6 +47,8 @@
           <element id="file-copy" path="X:/apache-tomcat-9.0.29/lib/tomcat-i18n-pt-BR.jar" />
           <element id="file-copy" path="X:/apache-tomcat-9.0.29/lib/tomcat-i18n-zh-CN.jar" />
           <element id="file-copy" path="X:/apache-tomcat-9.0.29/lib/catalina-storeconfig.jar" />
+          <element id="file-copy" path="X:/4_drivers/jmail/mail.jar" />
+          <element id="file-copy" path="X:/4_drivers/jmail/activation.jar" />
         </element>
       </element>
     </root>

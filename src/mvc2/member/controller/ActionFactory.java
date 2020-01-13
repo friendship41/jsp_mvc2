@@ -55,6 +55,18 @@ public class ActionFactory
             case "memberDelProc":
                 action = new MemberDeleteProcAction();
                 break;
+            case "findIDPW":
+                action = new FindIDPWAction();
+                break;
+            case "findIDProc":
+                action = new FindIDProcAction();
+                break;
+            case "findPWProc":
+                action = new FindPWProcAction();
+                break;
+            case "confirmEmailCode":
+                action = new ConfirmEmailCodeAction();
+                break;
             default:
                 action = new IndexAction();
                 break;

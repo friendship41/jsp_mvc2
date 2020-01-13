@@ -6,11 +6,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class JoinAction implements Action
+public class FindIDPWAction implements Action
 {
     @Override
     public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws IOException
     {
-        return new ActionForward("member/join/join.jsp", false);
+        return new ActionForward("member/login/findIDPW.jsp");
     }
 }

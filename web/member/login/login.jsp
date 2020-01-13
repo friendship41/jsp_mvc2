@@ -49,7 +49,7 @@
                     <div id="lo_btn">
                         <label><input type="submit" value="LOGIN" class="btn"></label>
                         <label><input type="button" value="JOIN" class="btn" onclick="goToJoin()"></label>
-                        <label><input type="button" value="ID/PW 찾기" class="btn" onclick="location.href='findIDPW.jsp'"></label>
+                        <label><input type="button" value="ID/PW 찾기" class="btn" onclick="location.href='/mvc2/main.do?cmd=findIDPW'"></label>
                     </div>
                 </fieldset>
             </form>

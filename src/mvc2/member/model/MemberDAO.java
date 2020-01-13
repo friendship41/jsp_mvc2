@@ -341,4 +341,44 @@ public class MemberDAO
             this.disConnect(con,pstmt,rs);
         }
     }
+
+
+    public boolean updatePw(String id, String pw)
+    {
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try
+        {
+            con = this.getConnection();
+
+            String sql = "UPDATE JAVALINE_MEMBER SET PW=? WHERE ID=?";
+
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, pw);
+            pstmt.setString(2, id);
+            int result = pstmt.executeUpdate();
+
+            if(result > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        catch (SQLException e)
+        {
+            System.out.println("MemberDAO/updatePw: "+e.getMessage());
+            return false;
+        }
+        finally
+        {
+            this.disConnect(con,pstmt,rs);
+        }
+    }
+
+
 }

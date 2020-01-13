@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../css/join_us.css" />
+    <link rel="stylesheet" href="/mvc2/css/join_us.css" />
     <script type="text/javascript" src="/mvc2/js/script.js"></script>
     <title>회원가입</title>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
