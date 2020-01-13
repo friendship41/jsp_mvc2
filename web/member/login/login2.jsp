@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:if test="${sessionScope.id eq null}">
-    <c:redirect url="member/login/login.jsp"></c:redirect>
+    <c:redirect url="/member/login/login.jsp"></c:redirect>
 </c:if>
 <!doctype html>
 <html>
@@ -42,9 +42,9 @@
                 <form>
 
                     <div id="modify_btn">
-                        <label><input type="button" value="정보수정" class="btn" onclick="location.href='../member/join_mod.jsp'"></label>
-                        <label><input type="button" value="회원탈퇴" class="btn" onclick="location.href='../member/mem_del.jsp'"></label>
-                        <label><input type="button" value="로그아웃" class="btn" onclick="location.href='logout.jsp'"></label></div>
+                        <label><input type="button" value="정보수정" class="btn" onclick="location.href='/mvc2/main.do?cmd=memberMod'"></label>
+                        <label><input type="button" value="회원탈퇴" class="btn" onclick="location.href=''"></label>
+                        <label><input type="button" value="로그아웃" class="btn" onclick="location.href='/mvc2/main.do?cmd=logout'"></label></div>
                     </fieldset>
                 </form>
             </div>

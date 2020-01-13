@@ -43,6 +43,12 @@ public class ActionFactory
             case "joinProc":
                 action = new JoinProcAction();
                 break;
+            case "memberMod":
+                action = new MemberModAction();
+                break;
+            case "memberModProc":
+                action = new MemberModProcAction();
+                break;
             default:
                 action = new IndexAction();
                 break;

@@ -1,10 +1,3 @@
-function check(){
-    if(document.find_frm.find_box.value==""){
-        alert("검색어를 입력해 주세요");
-        return false;
-    }
-}
-
 function checkJoinForm() {
     var foorm = document.join;
     if(document.getElementById("id").value===""){
@@ -123,11 +116,11 @@ function checkmodForm() {
 
 
 function goToHome() {
-    location.href="/jsp_homepage1";
+    location.href="/mvc2/main.do?cmd=index";
 }
 
 function goToJoin() {
-    location.href="/jsp_homepage1/member/join.jsp";
+    location.href="/mvc2/main.do?cmd=join";
 }
 
 function idCheck(id) {
