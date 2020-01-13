@@ -6,18 +6,21 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<% String id = (String)session.getAttribute("id");
-    if(id != null && !id.equals(""))
-    {
-        response.sendRedirect("/jsp_homepage1/login/login2.jsp");
-    }%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:if test="${sessionScope.id ne null}">
+    <c:redirect url="member/login/login2.jsp"></c:redirect>
+</c:if>
 <!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/jsp_homepage1/css/login_form.css" />
-    <script type="text/javascript" src="/jsp_homepage1/js/script.js"></script>
+    <link rel="stylesheet" href="/mvc2/css/login_form.css" />
+    <script type="text/javascript" src="/mvc2/js/script.js"></script>
+    <script type="text/javascript" src="/mvc2/js/alertMsg.js"></script>
     <title>로그인</title>
+    <script>
+        alertMsg('${requestScope.msg}');
+    </script>
 </head>
 <body>
 <div id="warp">
@@ -34,7 +37,7 @@
     <article id="contents">
 
         <div id="login_box">
-            <form method="post" action="procLogin.jsp">
+            <form method="post" action="/mvc2/login.do?cmd=loginProc">
                 <fieldset>
                     <legend>Login</legend>
                     <div>
