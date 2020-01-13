@@ -34,6 +34,15 @@ public class ActionFactory
             case "logout":
                 action = new LogoutProcAction();
                 break;
+            case "join":
+                action = new JoinAction();
+                break;
+            case "idCheck":
+                action = new IdCheckAction();
+                break;
+            case "joinProc":
+                action = new JoinProcAction();
+                break;
             default:
                 action = new IndexAction();
                 break;

@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <header>
     <c:if test="${sessionScope.id eq null}">
-        <div id="login"><a href="/mvc2/main.do?cmd=login">Login</a> | <a href="/mvc2/member/join.jsp">Join</a></div>
+        <div id="login"><a href="/mvc2/main.do?cmd=login">Login</a> | <a href="/mvc2/main.do?cmd=join">Join</a></div>
     </c:if>
     <c:if test="${sessionScope.id ne null}">
         <div id="login">${sessionScope.id}님 환영합니다!  |  <a href="/mvc2/main.do?cmd=logout">Logout</a></div>

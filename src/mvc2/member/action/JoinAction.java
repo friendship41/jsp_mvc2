@@ -4,17 +4,13 @@ import mvc2.member.controller.ActionForward;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class LogoutProcAction implements Action
+public class JoinAction implements Action
 {
     @Override
     public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws IOException
     {
-        HttpSession session = request.getSession();
-        session.setAttribute("id", null);
-
-        return new ActionForward("main.do?cmd=index", false);
+        return new ActionForward("/mvc2/member/join/join.jsp", false);
     }
 }

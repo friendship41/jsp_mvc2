@@ -2,7 +2,7 @@
     <ul>
         <c:if test="${sessionScope.id eq null}">
             <li><a href="/mvc2/main.do?cmd=login">Login</a></li>
-            <li><a href="/mvc2">Join Us</a></li>
+            <li><a href="/mvc2/main.do?cmd=join">Join Us</a></li>
         </c:if>
         <c:if test="${sessionScope.id ne null}">
             <li><a href="/mvc2/main.do?cmd=logout">Logout</a></li>
