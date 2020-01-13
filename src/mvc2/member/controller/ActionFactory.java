@@ -1,9 +1,6 @@
 package mvc2.member.controller;
 
-import mvc2.member.action.Action;
-import mvc2.member.action.IndexAction;
-import mvc2.member.action.LoginAction;
-import mvc2.member.action.LoginProcAction;
+import mvc2.member.action.*;
 
 public class ActionFactory
 {
@@ -33,6 +30,9 @@ public class ActionFactory
                 break;
             case "loginProc":
                 action = new LoginProcAction();
+                break;
+            case "logout":
+                action = new LogoutProcAction();
                 break;
             default:
                 action = new IndexAction();

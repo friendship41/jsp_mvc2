@@ -5,7 +5,7 @@
         <div id="login"><a href="/mvc2/main.do?cmd=login">Login</a> | <a href="/mvc2/member/join.jsp">Join</a></div>
     </c:if>
     <c:if test="${sessionScope.id ne null}">
-        <div id="login">${sessionScope.id}님 환영합니다!  |  <a href="/mvc2/login/logout.jsp">Logout</a></div>
+        <div id="login">${sessionScope.id}님 환영합니다!  |  <a href="/mvc2/main.do?cmd=logout">Logout</a></div>
     </c:if>
     <div class="clear"></div>
     <div id="logo">
@@ -14,7 +14,7 @@
         <ul>
             <li><a href="/mvc2/main.do?cmd=index">Home</a></li>
             <li><a href="#">Who is Tommy.Lee?</a></li>
-            <li><a href="/mvc2">Member</a></li>
+            <li><a href="/mvc2/main.do?cmd=login">Member</a></li>
             <li><a href="/mvc2">Board</a></li>
             <li><a href="#">Ajax Board</a></li>
         </ul>
